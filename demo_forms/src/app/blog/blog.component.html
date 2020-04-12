@@ -1,0 +1,28 @@
+<div class="home">
+    <div class="breadcrumbs_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>			
+</div>
+
+<!-- Blog -->
+
+<div class="container">
+    <h1>{{date|date:'MMM'}}</h1>
+    <h1>{{7|square:10}}</h1>
+    <div *ngFor="let value of fTechData|limit:5">
+        <h3 appAttr>{{value.title|lowercase}}</h3><br>
+        <p ><img [src]="value.urlToImage" width="100%" height="300"></p>
+        <br><p appAttr>{{value.description}}</p><br>
+    </div>
+</div>

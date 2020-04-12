@@ -1,0 +1,20 @@
+<br>
+<br><br><br><br><br><div class="jumbotron text-center" >
+    <h1>Registration</h1>
+</div>
+
+<div class="container">
+    <form class="form-group" #ff="ngForm" (ngSubmit)="register()">
+        <label>Email</label>
+        <input type="text" class="form-control" [(ngModel)]="email" name="email" required pattern="[a-zA-Z]{5,30}" #em="ngModel">
+        <div *ngIf="em.invalid && em.touched" class="alert alert-danger">
+            <div *ngIf="em.errors.required"> email is required</div>
+            <div *ngIf="em.errors.pattern"> Invalid Input</div>
+        </div>
+        <label>Password</label>
+        <input type="text" class="form-control" [(ngModel)]="pass" name="pass">
+        <br>
+        <input type="submit" class="btn btn-success" value="Login" [disabled]="ff.invalid">
+    </form>
+</div>
+

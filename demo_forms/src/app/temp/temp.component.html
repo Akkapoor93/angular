@@ -1,0 +1,19 @@
+<br>
+<br><br><br><br><br><div class="jumbotron text-center" >
+    <h1>Registration</h1>
+</div>
+
+<div class="container">
+    <form class="form-group" [formGroup]="myForm" (ngSubmit)="login()">
+        <label>Email</label>
+        <input type="text" class="form-control" formControlName="email">
+        <div *ngIf="this.myForm.controls['email'].invalid && this.myForm.controls['email'].touched" class="alert alert-danger">
+            invalid input
+        </div>
+        <label>Password</label>
+        <input type="text" class="form-control" formControlName="pass">
+        <br>
+        <input type="submit" class="btn btn-primary" value="Register">
+    </form>
+</div>
+
