@@ -1,6 +1,6 @@
 # Demoapp
 
-This project demonstrate the use of pipe. Pipe has been used in blog.component.html. square and limit are the custom pipes created and implemention are at square.pipe and limit.pipe under app component. Also date built in pipe is used.
+This project demonstrates the use of pipe. Pipe has been used in blog.component.html. square and limit are the custom pipes created and implemention are at square.pipe and limit.pipe under app component. Also date built in pipe is used.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
